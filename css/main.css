@@ -1,3 +1,103 @@
-body{
-    background: rgb(204, 76, 76);
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
+
+body{
+    height: 150vh;
+}
+
+header{
+    background-image: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    align-items: flex-start;
+}
+
+.txt-superior{
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-top: 5%;
+    width: 50%;
+    font-size: 25px;
+    justify-content: space-around;
+    color: white;
+}
+
+#img-superior{
+    width: 450px;
+    height: 300px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: 350px;
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+    bottom: 0;   
+    left: 0;
+    height: 150px;
+}
+
+
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.imagen{
+    display: inline;
+    padding: 10px;
+    margin: 0px;
+}
+
+.imagen img{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.imagen.selecionada{
+    position: fixed;
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    top: 0;
+}
+
+.imagen.selecionada img{
+    width: 90vh;
+    height: 90vh;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+cursor: default;
+}
+
+.imagen.selecionada::after{
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.781);
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+
+
+
